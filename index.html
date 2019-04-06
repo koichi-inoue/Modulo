@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <script src="myScript.js"></script>
+    <link href="style.css" rel="stylesheet" >
+    <title>Modulo Pattern</title>
+  </head>
+
+  <body>
+
+    <h1 id="Title">Modulo Pattern</h1>
+    <p id="SubTitle">剰余系がつくる周期的造形</p>
+
+    <canvas id="myCanvas" width="640" height="480"></canvas>
+
+    <ul id="parameter">
+      <li class="button"><button id="P1">Parameter 01</button></li>
+      <li class="value"></li>
+      <li class="button"><button id="P2">Parameter 02</button></li>
+      <li class="value"></li>
+    </ul>
+
+    <ul id="formula">
+      <li>R：( sin(x) + cos(y) ) * P1 * P2 mod 256</li>
+      <li>G：( x^2 + y^2 ) * P1  mod 256</li>
+      <li>B：( x * y * P2 ) mod 256</li>
+    </ul>
+
+  </body>
+
+</html>
